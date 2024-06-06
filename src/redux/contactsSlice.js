@@ -29,5 +29,6 @@ const contactSlice = createSlice({
   },
 });
 
+export const selectContacts = (state) => state.contacts.items;
 export const { addContact, deleteContact } = contactSlice.actions;
 export default contactSlice.reducer;
